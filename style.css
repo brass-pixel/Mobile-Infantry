@@ -29,184 +29,215 @@ h2 {
 }
 
 ul {
+	margin: 0;
 	padding: 0;
 }
+
+button {
+	outline:none;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
 /* Header */
+header {
+	position: relative;
+	height: 100vh;
+}
+header::before {
+	content: "";
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("images/hero-image.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.8;
+}
+
+.navbar, .hero {
+	position: relative;
+	z-index: 1;
+}
 
 /* Navigation Bar */
 
 #logo {
-	font-weight: bold;
+	font-size: 48px;
+	font-weight: bolder;
 	color: #C99173;
-	padding-left: 100px;
+	display: flex;
+	flex-direction:column;
+	text-align: center;
 }
 
 #logo {
 	/* Needs working on */
-	-webkit-text-stroke: 1.5px #232121;
+	-webkit-text-stroke: 2px #232121;
 }
 
+.navbar {
+	padding-top: 40px;
+}
 nav ul, .navlinks{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	align-items: center;
+	flex-grow: auto;
 }
 
-nav{
-	margin: 30px;
-	padding: 20px;
-}
-
-nav ul{
-	margin: 40px;
-}
 .navlinks {
-	gap: 82px;
+	gap: 140px;
+}
+
+
+#cta-join {
+	outline:none;
+	background-color: transparent;
+	padding: 15px;
+	border: 5px;
+	border-radius: 10px;
+	border-style: solid;
+	border-color: #5F1B2B;
 }
 /* Hero Section */
 
 .hero {
 	display: flex;
-	justify-content: space-around;
-	margin: 150px 0;
-}
-.hero-diamond {
-	margin:0;
-	padding: 0;
-	width: 505px;
-	height: 505px;
-	background-color: #4D4D4D;
-	border-style: solid;
-	border-width: 3px;
-	border-color: #734E3A;
-	transform: rotate(45deg);
-	transform-origin: center;
-}
-
-.hero-text{
-	transform: rotate(-45deg);
-	transform-origin: center;
 	text-align: center;
+	margin-left: 140px;
+	margin-top: 190px;
 }
 
-#hero-quote span{
+#dead-bug{
 	text-decoration: underline;
 }
 
-.hero-text p {
-	font-size: 18px;
+.hero-text .primary-button {
+	margin-top: 20px;
 }
+
+
 
 .primary-button {
 	background-color: #5F1B2B;
-	width: 390px;
+	width: 80%;
 	height: 80px;
 	font-weight: bold;
 	border-radius: 10px;
 }
 
-.hero img {
-	width: 50%;
-	height: auto;
-}
-/* Weapon Section */
-.weapons {
-	background-color: #747474;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 85px;
-	gap:50px;
+/* Testimonials Section */
+#testimonials {
+	background-color: #242424;
+	padding: 120px 0;
 }
 
-.weapon-testimonials {
-	background-color: #333333;
-	border-radius: 10px;
-	padding: 10px 20px;
-	width: 1000px;
-}
-
-
-/* Classes Section */
-.classes {
+#testimonials h1 {
 	text-align: center;
-	padding-top: 40px;
-	padding-bottom: 50px;
+	margin-bottom: 80px;
 }
 
-.classes h1 {
-	margin: 20px;
+.testimonials-rows {
+	display:flex;
+	flex-direction: column;
+	gap: 80px;
 }
-.class-cards {
+.testimonial-section {
+	background-color: #404040;
 	display: flex;
+}
+
+.testimonial-section:nth-child(odd) {
+	margin-left: 425px;
+	padding-right: 220px;
+}
+
+.testimonial-section:nth-child(even) {
+	margin-right: 425px;
+	padding-left: 220px;
+}
+
+.testimonial-text {
+	padding: 0 90px;
+}
+
+.testimonial-text p {
+	font-style: italic;
+}
+
+.testimonial-section img {
+	width: 228px;
+	height: 284px;
+}
+
+
+/* Deep Space Vanguard */
+#deep-space-vanguard {
+	margin-bottom: 110px;
+}
+#dsv-header {
+	text-align: center;
+	margin:80px;
+}
+
+#dsv-header p span {
+	font-weight: bold;
+}
+
+.classes {
+	display:flex;
 	justify-content: space-evenly;
-	align-items: center;
-}
-.card, .class-motto
-{
-	border-radius: 5px;
-	border-style: solid;
-	border-color: #734E3A;
 }
 
-.card img {
-	width: 411px;
-	height: 411px;
+.classes img{
+	height: 600px;
+	width: auto;
 }
 
-.card h2{
-	font-weight: lighter;
-	font-style: italic;
+/* Join the mobile Infantry section */
+
+#join {
+	background-color:#242424;
+	padding:80px;
+
 }
 
-.class-motto {
-	border-width: 8px;
-	margin:30px 0;
-	font-size: 24px;
-	font-style: italic;
-	padding: 10px 0;
+#join h1 {
+	text-align: center;
 }
 
-.hunter .card {
-	background-color: #3F3737;
+.recruitment {
+	display:flex;
+	margin:100px;
+	text-align: center;
+	gap: 70px;
 }
 
-.hunter .card p {
-	color: #8A4858;
-	font-style: italic;
-}
-
-.operator .card {
-	background-color: #34393A;
-}
-
-.operator .card p {
-	color: #2D8699;
-	font-style: italic;
-}
-.bastion .card{
-	background-color: #363A3E;
-}
-
-.bastion .card p {
-	color: #2D7DC8;
-	font-style: italic;
-}
-
-/* Service Section */
-
-.service {
-	background-color: #747474;
-}
-
-.service-card {
-	background-color: #5F1B2B;
+.join-card {
+	background-color: #333;
+	height:100%;
+	padding: 30px;
+	width: auto;	
 	border-radius: 15px;
 }
 
-.secondary-button {
-background-color: #EDCCBF;
-border-color: #747474;
-border-radius: 4px;
-color: black;
+
+/* Footer */
+#footer-nav ul {
+	display:flex;
+	justify-content:center;
+	gap: 200px;
+	background-color: #646363;
+	padding: 40px;
+	color: black;
 }
 
+footer {
+	text-align: center;
+}
