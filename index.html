@@ -8,17 +8,30 @@
 
 	</head>
 	<body>
-		<header id="main">
-			<nav class="navbar">
-					<a href="#main" id="logo"><li id="logo">MOBILE INFANTRY</li></a>
-				<ul class="navlinks">
-						<li><a href="#testimonials">Testimonials</a></li>
-						<li><a href="#deep-space-vanguard">Deep Space Vanguard</a></li>
-						<li ><a href="#join"><button id="cta-join">Join</button></a></li>
+		<header id="home">
+			<nav class="navbar container">
+				<a href="#home" id="logo"><li id="logo">MOBILE INFANTRY</li></a>
+				<ul id="navlinks">
+					<li><a href="#testimonials">Testimonials</a></li>
+					<li><a href="#deep-space-vanguard">Deep Space Vanguard</a></li>
+					<li><a href="#join"><button id="cta-join">Join</button></a></li>
 				</ul>
+				<button class="hamburger-button">
+					<svg id="hamburger" xmlns="http://www.w3.org/2000/svg" width="38" height="28" viewBox="0 0 38 28" fill="none">
+						<path d="M2.71429 5.9H35.2857C36.784 5.9 38 4.6904 38 3.2C38 1.7096 36.784 0.5 35.2857 0.5H2.71429C1.216 0.5 0 1.7096 0 3.2C0 4.6904 1.216 5.9 2.71429 5.9ZM35.2857 11.3H2.71429C1.216 11.3 0 12.5096 0 14C0 15.4904 1.216 16.7 2.71429 16.7H35.2857C36.784 16.7 38 15.4904 38 14C38 12.5096 36.784 11.3 35.2857 11.3ZM35.2857 22.1H2.71429C1.216 22.1 0 23.3096 0 24.8C0 26.2904 1.216 27.5 2.71429 27.5H35.2857C36.784 27.5 38 26.2904 38 24.8C38 23.3096 36.784 22.1 35.2857 22.1Z" fill="#8D8D8D"/>
+					</svg>
+					<div id="hamburger-links" class="visible">
+						<ul>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#testimonials">Testimonials</a></li>
+							<li><a href="#deep-space-vanguard">Deep Space Vanguard</a></li>
+							<li><a href="#join">Join</a></li>
+						</ul>
+					</div>
+				</button>
 			</nav>
 
-			<div class="hero">
+			<div class="hero container">
 				<div class="hero-text">
 					<h1 id="hero-quote">The only good bug is a <br><span id="dead-bug">dead bug</span></h1>
 
@@ -32,28 +45,35 @@
 			<h1>Testimonials</h1>
 
 			<div class="testimonials-rows">
-				<div class=testimonial-section>
-					<img src="images/rico.jpeg" alt="John D. Rico">
-					<div class="testimonial-text">
-						<h2>General John D. Rico</h2>
-						<p>Joining the Mobile Infantry isn't just a job; it's a calling, a commitment to a cause greater than oneself. It's about protecting our planet, preserving our way of life, and standing tall against the bugs that threaten our existence!</p>
+
+				<div class="container">
+					<div class="testimonial-section">
+
+						<img src="images/rico.jpg" alt="John D. Rico">
+						<div class="testimonial-text">
+							<h2>General John D. Rico</h2>
+							<p>Joining the Mobile Infantry isn't just a job; it's a calling, a commitment to a cause greater than oneself. It's about protecting our planet, preserving our way of life, and standing tall against the bugs that threaten our existence!</p>
+						</div>
 					</div>
 				</div>
 
-				<div class=testimonial-section>
-					<div class="testimonial-text">	
-						<h2>Private Charles Zim</h2>
-						<p>When Buenos Aires got hit by the Bug Meteor, I knew I needed to join the fight. I had to get busted down to a Private but it was worth it. Nothing like giving hell to bugs when you join the Mobile Infantry!</p>
+				<div class="container">
+					<div class="testimonial-section">
+						<div class="testimonial-text">	
+							<h2>Private Charles Zim</h2>
+							<p>When Buenos Aires got hit by the Bug Meteor, I knew I needed to join the fight. I had to get busted down to a Private but it was worth it. Nothing like giving hell to bugs when you join the Mobile Infantry!</p>
+						</div>
+						<img src="images/zim.jpg" alt="Charles Zim">
 					</div>
-
-					<img src="images/zim.jpg" alt="Charles Zim">
 				</div>
 
-				<div class=testimonial-section>
-					<img src="images/ace.jpg" alt="Ace Levy">
-					<div class="testimonial-text">
-						<h2>Private Ace Levy</h2>
-						<p>If I hadn’t joined the Mobile Infantry, I don’t know what I’d do, but I know that I’d be pretty damn miserable without my brother-in-arms Rico. Join the Mobile Infantry and we’ll kill all the bugs!</p>
+				<div class="container">
+					<div class="testimonial-section">
+						<img src="images/ace.jpg" alt="Ace Levy">
+						<div class="testimonial-text">
+							<h2>Private Ace Levy</h2>
+							<p>If I hadn’t joined the Mobile Infantry, I don’t know what I’d do, but I know that I’d be pretty damn miserable without my brother-in-arms Rico. Join the Mobile Infantry and we’ll kill all the bugs!</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -65,40 +85,47 @@
 			<div id="dsv-header">
 				<h1>Deep Space Vanguard</h1>
 				<p>An elite outfit has been created to take part in 
-					<br>operation <span>Starship Troopers Extermination</span></p>
+					<br>operation <strong>Starship Troopers Extermination</strong></p>
 			</div>
-			<div class="classes">
-				<img src="images/hunter.png">
-				<img src="images/operator.png">
-				<img src="images/bastion.png">
+			<div class="container">
+				<div class="classes">
+					<img src="images/hunter.png">
+					<img src="images/operator.png">
+					<img src="images/bastion.png">
+				</div>
 			</div>
 		</div>
 
 		<!-- JOIN SECTION -->
 		<div id="join">
-			<div>		
-				<h1>JOIN THE MOBILE INFANTRY</h1>
-				<h2>Service Guarantees Citizenship!</h2>
+			<div class="container">
+				<div>		
+					<h1>JOIN THE MOBILE INFANTRY</h1>
+					<h2>Service Guarantees Citizenship!</h2>
+				</div>
 			</div>
-
-			<img src="images/join.png" alt="Recruitment Propoganda">
-			<div>
-			<button class="primary-button join-button">Enlist now!</button></div>
+			<div class="container recruitment">
+				<div>
+					<img src="images/join.png" alt="Recruitment Propoganda">
+					<button class="primary-button join-button">Enlist now!</button>
+				</div>
+			</div>
 		</div>
-
 
 		<!-- FOOTER SECTION -->
 		<footer>
-			<nav id="footer-nav">
-				<ul>
-					<li><a href="#main">Home</a></li>
-					<li><a href="#testimonials">Testimonials</a></li>
-					<li><a href="#deep-space-vanguard">Deep Space Vanguard</a></li>
-					<li><a href="#join">Join</a></li>
-				</ul>
+			<nav id="footer-nav" >
+				<div class="container">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#testimonials">Testimonials</a></li>
+						<li><a href="#deep-space-vanguard">Deep Space Vanguard</a></li>
+						<li><a href="#join">Join</a></li>
+					</ul>
+				</div>
 			</nav>
 
-			<p>DESGINED BY BO TRAN AS A PORTFOLIO PIECE</p>
+			<p>DESIGINED BY BO TRAN AS A PORTFOLIO PIECE</p>
 		</footer>
 	</body>
 </html>
