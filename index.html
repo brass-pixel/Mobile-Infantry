@@ -5,30 +5,33 @@
 		<meta name="viewport" content="width=device-width, inital-scale=1.0" charset="utf-8">
 		<link rel="stylesheet" href="style.css">
 		<link href="https://fonts.cdnfonts.com/css/chakra-petch" rel="stylesheet">
-
 	</head>
 	<body>
 		<header id="home">
 			<nav class="navbar container">
 				<a href="#home" id="logo"><li id="logo">MOBILE INFANTRY</li></a>
 				<ul id="navlinks">
-					<li><a href="#testimonials">Testimonials</a></li>
-					<li><a href="#deep-space-vanguard">Deep Space Vanguard</a></li>
+					<li><a class="nav-link-ltr" href="#testimonials">Testimonials</a></li>
+					<li><a class="nav-link-ltr" href="#deep-space-vanguard">Deep Space Vanguard</a></li>
 					<li><a href="#join"><button id="cta-join">Join</button></a></li>
 				</ul>
-				<button class="hamburger-button">
-					<svg id="hamburger" xmlns="http://www.w3.org/2000/svg" width="38" height="28" viewBox="0 0 38 28" fill="none">
-						<path d="M2.71429 5.9H35.2857C36.784 5.9 38 4.6904 38 3.2C38 1.7096 36.784 0.5 35.2857 0.5H2.71429C1.216 0.5 0 1.7096 0 3.2C0 4.6904 1.216 5.9 2.71429 5.9ZM35.2857 11.3H2.71429C1.216 11.3 0 12.5096 0 14C0 15.4904 1.216 16.7 2.71429 16.7H35.2857C36.784 16.7 38 15.4904 38 14C38 12.5096 36.784 11.3 35.2857 11.3ZM35.2857 22.1H2.71429C1.216 22.1 0 23.3096 0 24.8C0 26.2904 1.216 27.5 2.71429 27.5H35.2857C36.784 27.5 38 26.2904 38 24.8C38 23.3096 36.784 22.1 35.2857 22.1Z" fill="#8D8D8D"/>
-					</svg>
-					<div id="hamburger-links" class="visible">
-						<ul>
-							<li><a href="#home">Home</a></li>
-							<li><a href="#testimonials">Testimonials</a></li>
-							<li><a href="#deep-space-vanguard">Deep Space Vanguard</a></li>
-							<li><a href="#join">Join</a></li>
-						</ul>
-					</div>
-				</button>
+				<!-- Hamburger Menu (Phone/Tablet) -->
+				<div id="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div id="overlay">
+</div>
+				<div id="side-menu">
+					<ul>
+						<li id="close-button">X</li>
+						<li><a class="nav-link-ltr side-link" href="#home">Home</a></li>
+						<li><a class="nav-link-ltr side-link" href="#testimonials">Testimonials</a></li>
+						<li><a class="nav-link-ltr side-link" href="#deep-space-vanguard">Deep Space Vanguard</a></li>
+						<li><a class="nav-link-ltr side-link" href="#join">Join</a></li>
+					</ul>
+				</div>
 			</nav>
 
 			<div class="hero container">
@@ -51,6 +54,7 @@
 
 						<img src="images/rico.jpg" alt="John D. Rico">
 						<div class="testimonial-text">
+
 							<h2>General John D. Rico</h2>
 							<p>Joining the Mobile Infantry isn't just a job; it's a calling, a commitment to a cause greater than oneself. It's about protecting our planet, preserving our way of life, and standing tall against the bugs that threaten our existence!</p>
 						</div>
@@ -107,7 +111,7 @@
 			<div class="container recruitment">
 				<div>
 					<img src="images/join.png" alt="Recruitment Propoganda">
-					<button class="primary-button join-button">Enlist now!</button>
+					<a href="https://store.steampowered.com/app/1268750/Starship_Troopers_Extermination/"><button class="primary-button join-button">Enlist now!</button></a>
 				</div>
 			</div>
 		</div>
@@ -117,15 +121,17 @@
 			<nav id="footer-nav" >
 				<div class="container">
 					<ul>
-						<li><a href="#home">Home</a></li>
-						<li><a href="#testimonials">Testimonials</a></li>
-						<li><a href="#deep-space-vanguard">Deep Space Vanguard</a></li>
-						<li><a href="#join">Join</a></li>
+						<li><a class="nav-link-ltr" href="#home">Home</a></li>
+						<li><a class="nav-link-ltr" href="#testimonials">Testimonials</a></li>
+						<li><a class="nav-link-ltr" href="#deep-space-vanguard">Deep Space Vanguard</a></li>
+						<li><a class="nav-link-ltr" href="#join">Join</a></li>
 					</ul>
 				</div>
 			</nav>
 
 			<p>DESIGINED BY BO TRAN AS A PORTFOLIO PIECE</p>
 		</footer>
+		<!-- Import JS -->
+		<script src="script.js"></script>    
 	</body>
 </html>
